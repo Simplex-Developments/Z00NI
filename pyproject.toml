@@ -1,6 +1,5 @@
 [tool.poetry]
 name = "z00ni"
-version = "0.3.0-b.1+2022.02"
 description = "Z00NI Discord Bot"
 authors = ["Simplex <kontakt.simplex@outlook.de>"]
 license = "AGPL-3.0 License"
