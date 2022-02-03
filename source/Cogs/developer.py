@@ -2,8 +2,8 @@ from nextcord.ext import commands
 from nextcord.ext.commands import  Context
 from nextcord import Embed, Colour
 
-from Base.Helper.dev import load, unload, reload
-from Base.Helper.checks import is_dev
+from ..Base.Helper.dev import load, unload, reload
+from ..Base.Helper.checks import is_dev
 
 class developer(commands.Cog):
     def __init__(self, bot):

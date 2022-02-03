@@ -2,7 +2,7 @@ from loguru import logger
 
 def load(self, module):
     try:
-        self.bot.load_extension(f"source.Bot.commands.{module}")
+        self.bot.load_extension(f"source.Cogs.{module}")
         logger.debug(f"{module.upper()} wird geladen...")
     except Exception as e:
         logger.error(f"Fehler beim laden von {module.upper()}")
@@ -14,7 +14,7 @@ def load(self, module):
 
 def unload(self, module):
     try:
-        self.bot.unload_extension(f"source.Bot.commands.{module}")
+        self.bot.unload_extension(f"source.Cogs.{module}")
         logger.debug(f"{module.upper()} wird entladen...")
     except Exception as e:
         logger.error(f"Fehler beim entladen von {module.upper()}")
@@ -26,7 +26,7 @@ def unload(self, module):
 
 def reload(self, module):
     try:
-        self.bot.reload_extension(f"source.Bot.commands.{module}")
+        self.bot.reload_extension(f"source.Cogs.{module}")
         logger.debug(f"{module.upper()} wird neugeladen...")
     except Exception as e:
         logger.error(f"Fehler beim neuladen von {module.upper()}")
