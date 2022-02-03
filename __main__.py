@@ -1,6 +1,6 @@
 from loguru import logger
-from source.Bot.bot import start
+from source.Base.Bot.bot import start
 
-__version__ = "0.3.0-b.1+2022.02" # <MAJOR>.<MINOR>.<PATCH>-<IDENTIFIER>.<IDENTIFIER>+<BUILDMETA>
+__version__ = "1.0.0+2022.02" # <MAJOR>.<MINOR>.<PATCH>-<IDENTIFIER>.<IDENTIFIER>+<BUILDMETA>
 
 start(__version__)
