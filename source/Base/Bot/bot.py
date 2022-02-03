@@ -7,7 +7,7 @@ from source.Base.Helper.keep_alive import keep_alive
 
 from .init import __init__
 
-def start(version):
+def start(version, exts):
     bot = commands.Bot(command_prefix="?", case_insensitive=True)
 
     keep_alive()
@@ -26,6 +26,6 @@ def start(version):
         embed = nextcord.Embed(title="Bot-Informationen", description=f"Version: {version}", colour=nextcord.Colour.gold(), timestamp=ctx.message.created_at)
         return await  ctx.send(embed=embed)
 
-    __init__(bot, version)
+    __init__(bot, exts)
 
     bot.run(os.getenv("tokendev"))
