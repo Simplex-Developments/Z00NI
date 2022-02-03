@@ -3,10 +3,14 @@ from nextcord.ext import commands
 import os
 from loguru import logger
 
+from source.Base.Helper.keep_alive import keep_alive
+
 from .init import __init__
 
 def start(version):
     bot = commands.Bot(command_prefix="?", case_insensitive=True)
+
+    keep_alive()
 
     @bot.event
     async def on_ready():
