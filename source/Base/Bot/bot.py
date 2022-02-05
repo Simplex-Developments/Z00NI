@@ -8,7 +8,7 @@ from source.Base.Helper.keep_alive import keep_alive
 from .init import __init__
 
 def start(version, exts):
-    bot = commands.Bot(command_prefix="?", case_insensitive=True)
+    bot = commands.Bot(command_prefix="?d", case_insensitive=True)
 
     keep_alive()
 
