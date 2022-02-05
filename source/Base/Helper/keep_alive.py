@@ -4,7 +4,7 @@ from loguru import logger
 import logging
 import os
 
-# This File only exists because of Z00NI's hosting
+# * This File only exists because of Z00NI's hosting
 
 app = Flask('')
 
